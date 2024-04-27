@@ -1,0 +1,89 @@
+/* CSS */
+html {
+    display: flex; /* Adiciona flex container */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    
+    height: 100%; /* ajustando a tela para cobrir 100% do espaço disponível */   
+    background-color: rgb(124, 46, 197); /* Definindo a cor do fundo */
+}
+.content { /* CSS da <div> do conteúdo central */
+    background-image: linear-gradient(40deg, orange, blueviolet); /* Fazendo o degradê de fundo (Laranja e Roxo) em 40° graus */
+    padding: 20px 0px 0px 0px;
+    width: 520px;
+    height: 630px;
+    box-shadow: 0px 0px 10px black; /* Sombra usada como borda */
+    border-radius: 20px;
+}
+#tela { /* CSS da tela onde os números irão aparecer */
+    margin: 0 auto; /* Centralizando a <div> */
+
+    font-family: Arial, Helvetica, sans-serif; /* Definindo a fonte dos números */
+    text-align: end; /* Alinhando o texto à direita */
+    overflow: auto; /* Impedir que o resultado transborde da <div> */
+    background-color: white; /* Cor do background */
+    border-radius: 25px;
+    box-shadow: 0px 0px 4px black; /* Sombra usada como borda */
+    width: 450px;
+    height: 50px;
+    font-size: 44px; /* Tamanho da fonte */
+    padding: 20px 15px 20px 0px;
+}
+#res { /* CSS dos números da tela de resultado */
+    word-wrap: break-word; /* Quebra a linha quando o resultado for muito grande e ultrapassar a <div> */
+    margin: 0px;
+}
+table { /* CSS da tabela */
+    padding: 15px; /* Ajustando os botões na tabela */
+}
+button { /* CSS dos botões em geral */
+    border: none;
+    cursor: pointer; /* Muda a imagem do cursor al interagir com os botões */
+    background-color: blueviolet;
+    color: white;
+    font-size: 35px;
+    width: 100px;
+    height: 80px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    margin: 2px;
+}
+button:hover { /* Animação para mudar o background e a cor do botão quando o mouse passar por cima */
+    background-color: orange;
+    color: blueviolet;
+}
+button:active { /* Animação para mudar o background e a cor do botão quando ele for ativado */
+    background-color: rgb(110, 36, 180);
+    color: orange;
+}
+#botoes { /* CSS da <div> onde os botões estão */
+    margin: 0 auto; /* Centralizando a <div> */
+    width: 465px;
+    height: 470px;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 20px;
+}
+#b1 { /* CSS para os botões de função (C, <, /, x, -, +) */
+    color: orange;
+}
+#b1:hover { /* Animação para mudar o background e a cor dos botões (C, <, /, x, -, +) quando o mouse passar por cima */
+    background-color: orange;
+    color: blueviolet;
+}
+#b1:active { /* Animação para mudar o background e a cor dos botões (C, <, /, x, -, +) quando ele for ativado */
+    background-color: rgb(110, 36, 180);
+    color: orange;
+}
+#b2 { /* CSS específico para o botão (=) */
+    color: blueviolet;
+    background-color: orange;
+    height: 166px;
+}
+#b2:hover { /* Animação para mudar o background e a cor do botão (=) quando o mouse passar por cima */
+    background-color: rgb(110, 36, 180);
+    color: orange;
+}
+#b2:active { /* Animação para mudar o background e a cor do botão (=) quando ele for ativado */
+    background-color: orange;
+    color: blueviolet;
+}

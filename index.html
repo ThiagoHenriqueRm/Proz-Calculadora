@@ -1,0 +1,60 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">  <!-- Definindo os caracteres (UTF-8) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="Icone.ico"> <!-- Ícone -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
+    <script src="app.js"></script> <!-- Link para o JavaScript -->
+    <title>Calculadora</title> <!-- Título -->
+
+</head>
+<body> 
+
+    <div class="content"> <!-- <div> onde ficará o conteúdo principal -->
+        <div id="tela"> <!-- Tela onde ficarão os números -->
+            <p id="res"></p> <!-- <p> onde os números irão aparecer -->
+        </div>
+        
+        <br>
+        <hr> <!-- Linha para separar a tela dos botões -->
+        <br>
+
+        <div id="botoes"> <!-- <div> Onde ficarão os botões -->
+            <table> <!-- Tabela de botões -->
+                <tr>
+                    <td><button id="b1" onclick="limpar()">C</button></td> <!-- Botão Limpar -->
+                    <td><button id="b1" onclick="voltar()"><</button></td> <!-- Botão Voltar -->
+                    <td><button id="b1" onclick="inserir('/')">/</button></td> <!-- Botão de Dividir -->
+                    <td><button id="b1" onclick="inserir('*')">x</button></td> <!-- Botão de Multiplicar -->
+                </tr>
+                <tr>
+                    <td><button onclick="inserir('7')">7</button></td> <!-- Botão de Número 7 -->
+                    <td><button onclick="inserir('8')">8</button></td> <!-- Botão de Número 8 -->
+                    <td><button onclick="inserir('9')">9</button></td> <!-- Botão de Número 9 -->
+                    <td><button id="b1" onclick="inserir('-')">-</button></td> <!-- Botão de Subtração -->
+                </tr>
+                <tr>
+                    <td><button onclick="inserir('4')">4</button></td> <!-- Botão de Número 4 -->
+                    <td><button onclick="inserir('5')">5</button></td> <!-- Botão de Número 5 -->
+                    <td><button onclick="inserir('6')">6</button></td> <!-- Botão de Número 6 -->
+                    <td><button id="b1" onclick="inserir('+')">+</button></td> <!-- Botão de Adição -->
+                </tr>
+                <tr>
+                    <td><button onclick="inserir('1')">1</button></td> <!-- Botão de Número 1 -->
+                    <td><button onclick="inserir('2')">2</button></td> <!-- Botão de Número 2 -->
+                    <td><button onclick="inserir('3')">3</button></td> <!-- Botão de Número 3 -->
+                    <td rowspan="2"><button id="b2" onclick="calcular()">=</button></td> <!-- Botão de Ativar o cálculo -->
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="inserir('0')" style="width: 207px;">0</button></td> <!-- Botão de Número 0 -->
+                    <td><button onclick="inserir('.')">.</button></td>  <!-- Botão para casa decimal -->
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
