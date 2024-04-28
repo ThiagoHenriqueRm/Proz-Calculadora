@@ -1,6 +1,5 @@
 - Calculadora-Proz
 
-Um projeto que fiz para meu curso tecnico de desisvolvimento de sistema que faso na Proz Educaçao em MG Montes Calros
-Basicamente uma calculadora com as cores da Proz ( Roxo, Amarelo e Branco ). Foi o projeto principal de de 5 no total.
-
+Um projeto que fiz para meu curso técnico de desenvolvimento de sistemas que faço na Proz Educação em Montes Claros, MG.
+Basicamente, é uma calculadora com as cores da Proz (roxo, amarelo e branco). Foi o projeto principal de um total de 5.
   
